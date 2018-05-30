@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.debug.2010265664">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.debug.2010265664" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<macros>
+					<stringMacro name="ARTIK_SDK_BASE" type="VALUE_PATH_DIR" value="${ARTIKSDKPathFromID:artik5-7-10_1.6.0}"/>
+					<stringMacro name="ARTIK_TOOLCHAIN_BASE" type="VALUE_PATH_DIR" value="${ARTIKToolchainPathFromID:arm-linux-gnueabihf-4.8-2013.10}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.debug.2010265664" name="Debug" parent="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.debug">
+					<folderInfo id="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.debug.2010265664." name="/" resourcePath="">
+						<toolChain id="com.samsung.artik.ide.build.linux.toolchain.exe.debug.770074567" name="gcc-arm-linux-gnueabihf" superClass="com.samsung.artik.ide.build.linux.toolchain.exe.debug">
+							<option id="com.samsung.artik.ide.build.toolchain.settings.sdkID.1822368250" superClass="com.samsung.artik.ide.build.toolchain.settings.sdkID" value="artik5-7-10_1.6.0" valueType="string"/>
+							<option id="com.samsung.artik.ide.build.toolchain.settings.toolchainID.275480214" superClass="com.samsung.artik.ide.build.toolchain.settings.toolchainID" value="arm-linux-gnueabihf-4.8-2013.10" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.samsung.artik.ide.build.toolchain.targetPlatform.539421648" isAbstract="false" osList="all" superClass="com.samsung.artik.ide.build.toolchain.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/SecEx}/Debug" id="com.samsung.artik.ide.build.toolchain.builder.1438369991" managedBuildOn="true" name="Gnu Make Builder.Debug" superClass="com.samsung.artik.ide.build.toolchain.builder"/>
+							<tool id="com.samsung.artik.ide.build.toolchain.c.compiler.650447370" name="Cross GCC Compiler" superClass="com.samsung.artik.ide.build.toolchain.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1639161620" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1219005251" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.1294502904" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/base"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/base/platform"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/bluetooth"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/connectivity"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/lwm2m"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/media"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/mqtt"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/sensor"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/sensor/platform"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/systemio"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/wifi"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/zigbee"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.1681358440" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 --sysroot=${ARTIK_SDK_BASE}/sysroot" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.186604589" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.samsung.artik.ide.build.toolchain.cpp.compiler.1854051157" name="Cross G++ Compiler" superClass="com.samsung.artik.ide.build.toolchain.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.1358386857" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.992494321" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1541482464" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/base"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/base/platform"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/bluetooth"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/connectivity"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/lwm2m"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/media"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/mqtt"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/sensor"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/sensor/platform"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/systemio"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/wifi"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/zigbee"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.311913424" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 --sysroot=${ARTIK_SDK_BASE}/sysroot" valueType="string"/>
+							</tool>
+							<tool id="com.samsung.artik.ide.build.toolchain.c.linker.773148278" name="Cross GCC Linker" superClass="com.samsung.artik.ide.build.toolchain.c.linker">
+								<option id="gnu.c.link.option.paths.832753986" superClass="gnu.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/lib"/>
+								</option>
+								<option id="gnu.c.link.option.libs.261369771" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="artik-sdk-base"/>
+									<listOptionValue builtIn="false" value="artik-sdk-connectivity"/>
+								</option>
+								<option id="gnu.c.link.option.ldflags.1363025131" superClass="gnu.c.link.option.ldflags" value=" --sysroot=${ARTIK_SDK_BASE}/sysroot" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.930701791" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.samsung.artik.ide.build.toolchain.cpp.linker.226043331" name="Cross G++ Linker" superClass="com.samsung.artik.ide.build.toolchain.cpp.linker">
+								<option id="gnu.cpp.link.option.paths.1940283155" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/lib"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.208775194" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="artik-sdk-base"/>
+									<listOptionValue builtIn="false" value="artik-sdk-connectivity"/>
+								</option>
+								<option id="gnu.cpp.link.option.flags.583142361" superClass="gnu.cpp.link.option.flags" value=" --sysroot=${ARTIK_SDK_BASE}/sysroot" valueType="string"/>
+							</tool>
+							<tool id="com.samsung.artik.ide.build.toolchain.archiver.1362164298" name="Cross GCC Archiver" superClass="com.samsung.artik.ide.build.toolchain.archiver"/>
+							<tool id="com.samsung.artik.ide.build.toolchain.assembler.278152588" name="Cross GCC Assembler" superClass="com.samsung.artik.ide.build.toolchain.assembler">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1145734377" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.release.770219015">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.release.770219015" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<macros>
+					<stringMacro name="ARTIK_SDK_BASE" type="VALUE_PATH_DIR" value="${ARTIKSDKPathFromID:artik5-7-10_1.6.0}"/>
+					<stringMacro name="ARTIK_TOOLCHAIN_BASE" type="VALUE_PATH_DIR" value="${ARTIKToolchainPathFromID:arm-linux-gnueabihf-4.8-2013.10}"/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.release.770219015" name="Release" parent="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.release">
+					<folderInfo id="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.release.770219015." name="/" resourcePath="">
+						<toolChain id="com.samsung.artik.ide.build.linux.toolchain.exe.release.1960438012" name="gcc-arm-linux-gnueabihf" superClass="com.samsung.artik.ide.build.linux.toolchain.exe.release">
+							<option id="com.samsung.artik.ide.build.toolchain.settings.sdkID.1873076819" superClass="com.samsung.artik.ide.build.toolchain.settings.sdkID" value="artik5-7-10_1.6.0" valueType="string"/>
+							<option id="com.samsung.artik.ide.build.toolchain.settings.toolchainID.2074168145" superClass="com.samsung.artik.ide.build.toolchain.settings.toolchainID" value="arm-linux-gnueabihf-4.8-2013.10" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.samsung.artik.ide.build.toolchain.targetPlatform.1917629050" isAbstract="false" osList="all" superClass="com.samsung.artik.ide.build.toolchain.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/SecEx}/Release" id="com.samsung.artik.ide.build.toolchain.builder.1995785317" managedBuildOn="true" name="Gnu Make Builder.Release" superClass="com.samsung.artik.ide.build.toolchain.builder"/>
+							<tool id="com.samsung.artik.ide.build.toolchain.c.compiler.13886791" name="Cross GCC Compiler" superClass="com.samsung.artik.ide.build.toolchain.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.2105150773" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1866593773" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.1486030641" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/base"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/base/platform"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/bluetooth"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/connectivity"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/lwm2m"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/media"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/mqtt"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/sensor"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/sensor/platform"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/systemio"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/wifi"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/zigbee"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.1030614036" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 --sysroot=${ARTIK_SDK_BASE}/sysroot" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1633198547" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="com.samsung.artik.ide.build.toolchain.cpp.compiler.915541858" name="Cross G++ Compiler" superClass="com.samsung.artik.ide.build.toolchain.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.optimization.level.1034815830" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1617362921" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1970781854" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/base"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/base/platform"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/bluetooth"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/connectivity"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/lwm2m"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/media"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/mqtt"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/sensor"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/sensor/platform"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/systemio"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/wifi"/>
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/include/artik/zigbee"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.other.other.1807304000" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 --sysroot=${ARTIK_SDK_BASE}/sysroot" valueType="string"/>
+							</tool>
+							<tool id="com.samsung.artik.ide.build.toolchain.c.linker.1375365054" name="Cross GCC Linker" superClass="com.samsung.artik.ide.build.toolchain.c.linker">
+								<option id="gnu.c.link.option.paths.1873028230" superClass="gnu.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/lib"/>
+								</option>
+								<option id="gnu.c.link.option.libs.375808635" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="artik-sdk-base"/>
+									<listOptionValue builtIn="false" value="artik-sdk-connectivity"/>
+								</option>
+								<option id="gnu.c.link.option.ldflags.480202864" superClass="gnu.c.link.option.ldflags" value=" --sysroot=${ARTIK_SDK_BASE}/sysroot" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1795343426" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.samsung.artik.ide.build.toolchain.cpp.linker.1806083832" name="Cross G++ Linker" superClass="com.samsung.artik.ide.build.toolchain.cpp.linker">
+								<option id="gnu.cpp.link.option.paths.2712012" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${ARTIK_SDK_BASE}/sysroot/usr/lib"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.1822846951" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="artik-sdk-base"/>
+									<listOptionValue builtIn="false" value="artik-sdk-connectivity"/>
+								</option>
+								<option id="gnu.cpp.link.option.flags.839520058" superClass="gnu.cpp.link.option.flags" value=" --sysroot=${ARTIK_SDK_BASE}/sysroot" valueType="string"/>
+							</tool>
+							<tool id="com.samsung.artik.ide.build.toolchain.archiver.1528846762" name="Cross GCC Archiver" superClass="com.samsung.artik.ide.build.toolchain.archiver"/>
+							<tool id="com.samsung.artik.ide.build.toolchain.assembler.1079358828" name="Cross GCC Assembler" superClass="com.samsung.artik.ide.build.toolchain.assembler">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.160469015" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="SecEx.com.samsung.artik.ide.build.linux.toolchain.type.exe.813986949" name="Executable" projectType="com.samsung.artik.ide.build.linux.toolchain.type.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.debug.2010265664;com.samsung.artik.ide.build.linux.toolchain.type.exe.config.debug.2010265664.;com.samsung.artik.ide.build.toolchain.c.compiler.650447370;cdt.managedbuild.tool.gnu.c.compiler.input.186604589">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.samsung.artik.ide.build.linux.toolchain.type.exe.config.release.770219015;com.samsung.artik.ide.build.linux.toolchain.type.exe.config.release.770219015.;com.samsung.artik.ide.build.toolchain.c.compiler.13886791;cdt.managedbuild.tool.gnu.c.compiler.input.1633198547">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+		<buildTargets>
+			<target name="Create" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>Create</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+		</buildTargets>
+	</storageModule>
+</cproject>
